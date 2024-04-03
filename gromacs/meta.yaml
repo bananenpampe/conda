@@ -22,6 +22,7 @@ requirements:
     - llvm-openmp  # [osx]
     - python
   host:
+    - openmpi
     - fftw
     - libhwloc 2.*
     - libblas
@@ -29,6 +30,7 @@ requirements:
     - llvm-openmp  # [osx]
     - plumed
   run:
+    - openmpi
     - fftw
     - libhwloc 2.*
     - llvm-openmp  # [osx]
@@ -36,8 +38,8 @@ requirements:
 
 test:
   commands:
-    - gmx -version
-    - gmx mdrun -h | grep plumed
+    - gmx_mpi -version
+    - gmx_mpi mdrun -h | grep plumed
 
 about:
   home: http://www.gromacs.org/

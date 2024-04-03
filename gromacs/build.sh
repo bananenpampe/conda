@@ -30,8 +30,8 @@ mkdir build
 cd build
 cmake .. \
   $opt \
-  -DGMX_DEFAULT_SUFFIX=OFF \
-  -DGMX_MPI=OFF \
+  -DGMX_DEFAULT_SUFFIX=ON \
+  -DGMX_MPI=ON \
   -DGMXAPI=OFF \
   -DGMX_THREAD_MPI=OFF \
   -DGMX_GPU=OFF \
