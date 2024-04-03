@@ -17,7 +17,7 @@ export CPPFLAGS="-D__PLUMED_DEFAULT_KERNEL=$PREFIX/lib/libplumedKernel$SHLIB_EXT
 export CXXFLAGS="${CXXFLAGS//-O2/-O3}"
 
 # libraries are explicitly listed here due to --disable-libsearch
-export LIBS="-lboost_serialization -lfftw3 -lgsl -lgslcblas -llapack -lblas -lz $LIBS"
+export LIBS="-lfftw3 -lgsl -lgslcblas -llapack -lblas -lz $LIBS"
 
 # enable MPI
 export CXX=mpic++
@@ -26,7 +26,7 @@ export CXX=mpic++
 # --disable-libsearch forces to link only explicitely requested libraries
 # --disable-static-patch avoid tests that are only required for static patches
 # --disable-static-archive makes package smaller
-./configure --prefix=$PREFIX --disable-python --disable-libsearch --disable-static-patch --disable-static-archive --enable-modules=all --enable-boost_serialization
+./configure --prefix=$PREFIX --disable-python --disable-libsearch --disable-static-patch --disable-static-archive
 
 make -j3
 make install
