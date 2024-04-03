@@ -22,17 +22,17 @@ requirements:
     - llvm-openmp  # [osx]
     - python
   host:
-    - openmpi
+    - openmpi<5
     - fftw
-    - libhwloc 1.*
+    - libhwloc 2.*
     - libblas
     - liblapack
     - llvm-openmp  # [osx]
     - plumed
   run:
-    - openmpi
+    - openmpi<5
     - fftw
-    - libhwloc 1.*
+    - libhwloc 2.*
     - llvm-openmp  # [osx]
     - plumed >=2
 
