@@ -1,3 +1,3 @@
-# Conda packages for Masterclass 2021/2022
+# Conda packages for ISDD-2024 tutorial
 
-This branch is used to build GROMACS and LAMMPS. See instructions in masterclass documentation
+This branch is used to build GROMACS 2020.7 and PLUMED 2.9.
