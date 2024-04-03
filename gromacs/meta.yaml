@@ -23,14 +23,14 @@ requirements:
     - python
   host:
     - fftw
-    - libhwloc 1.*
+    - libhwloc 2.*
     - libblas
     - liblapack
     - llvm-openmp  # [osx]
     - plumed
   run:
     - fftw
-    - libhwloc 1.*
+    - libhwloc 2.*
     - llvm-openmp  # [osx]
     - plumed >=2
 
