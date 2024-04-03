@@ -26,7 +26,7 @@ requirements:
     - llvm-openmp  # [osx]
     - make
   host:
-    - openmpi
+    - openmpi<5
     - fftw
     - gsl
     - libblas
@@ -34,7 +34,7 @@ requirements:
     - llvm-openmp  # [osx]
     - zlib
   run:
-    - openmpi
+    - openmpi<5
     - gawk
     - llvm-openmp  # [osx]
 
