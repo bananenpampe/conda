@@ -26,7 +26,7 @@ export CXX=mpic++
 # --disable-libsearch forces to link only explicitely requested libraries
 # --disable-static-patch avoid tests that are only required for static patches
 # --disable-static-archive makes package smaller
-./configure --prefix=$PREFIX --disable-python --disable-libsearch --disable-static-patch --disable-static-archive
+./configure --prefix=$PREFIX --enable-modules=crystallization --disable-python --disable-libsearch --disable-static-patch --disable-static-archive
 
 make -j3
 make install
